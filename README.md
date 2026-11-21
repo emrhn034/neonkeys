@@ -4,6 +4,8 @@
 
 Built for Valorant streams on Kick, Twitch, YouTube, or any platform supported by OBS. Show your current key presses and mouse clicks with a transparent Browser Source. No OBS plugin, Python installation, account, or hosted server is required.
 
+**[Download NeonKeys.exe](https://github.com/emrhn034/neonkeys/releases/download/v0.1.0/NeonKeys.exe)** · **[Release and ZIP package](https://github.com/emrhn034/neonkeys/releases/tag/v0.1.0)**
+
 ![Design and device selector](docs/designs.jpg)
 
 ## Features
@@ -73,7 +75,7 @@ An optional integration smoke check starts the standalone executable, verifies t
 .\scripts\smoke.ps1
 ```
 
-Close an existing NeonKeys instance before running that check. GitHub Actions runs the build and smoke check for pushes and pull requests. Pushing a `v*` tag builds and publishes a release with the executable, ZIP, and checksums.
+Close an existing NeonKeys instance before running that check. GitHub Actions runs the build and smoke check for pushes and pull requests. A successful push to `main` publishes the version in `VERSION` if it has not already been released. Existing version releases are left unchanged. Pushing a `v*` tag also builds and publishes that tagged release with the executable, ZIP, and checksums.
 
 ## Input and privacy
 
