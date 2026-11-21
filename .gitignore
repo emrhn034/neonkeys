@@ -1,0 +1,10 @@
+/dist/
+/work/
+*.exe
+*.zip
+*.pdb
+*.tmp
+.vs/
+.vscode/
+.DS_Store
+Thumbs.db

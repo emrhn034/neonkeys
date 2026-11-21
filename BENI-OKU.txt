@@ -1,0 +1,56 @@
+NEONKEYS — OBS / KICK KLAVYE KATMANI
+
+1. NeonKeys.exe dosyasini kullanacak kisinin Windows bilgisayarina kopyala.
+2. NeonKeys.exe dosyasini cift tiklayarak ac. Kontrol paneli tarayicida acilir.
+3. Panelden tasarim, cihaz, renk ve yayinci adini sec, OBS adresini kopyala.
+4. OBS > Kaynaklar > + > Tarayici. Yerel dosya kapali olsun.
+5. Adresi yapistir. Panelde secimine gore gosterilen boyutlari kullan. FPS: 60.
+6. Kaynagi oyun goruntusunun ustune tasi, kucult ve yerlestir.
+
+Uygulama acikken: http://127.0.0.1:47831/
+Varsayilan OBS: http://127.0.0.1:47831/overlay
+
+TASARIMLAR: Neon, Glass, Minimal, Arcade.
+CIHAZLAR: Klavye + Fare (560 x 400), yalnizca klavye (460 x 400),
+yalnizca fare (260 x 360). Minimal siyah/beyazdir, digerleri 3 renk paletini
+destekler. Secimler bilgisayarda hatirlanir ve OBS adresine eklenir.
+Secimleri degistirdiginde yeni adresi ve boyutlari OBS'de guncelle.
+Animasyonlu demo yalnizca panel onizlemesidir, OBS'ye gercek tuslar gider.
+
+BU ADRES HERKESIN KENDI BILGISAYARINDA CALISIR.
+127.0.0.1, adresi acan kisinin kendi bilgisayari demektir.
+Yayincinin uygulamayi kendi bilgisayarinda acmasi gerekir.
+Bir baskasinin bilgisayarinin acik olmasina, sunucuya veya internet
+baglantisina ihtiyac yoktur. Her yayinci sadece kendi tuslarini gorur.
+EXE dosyasini Discord, USB vb. ile paylasabilirsin. Bu sohbetteki
+indirme baglantisi herkese acik bir internet dagitim adresi degildir.
+
+Paneli kapatabilirsin; NeonKeys sistem tepsisinde acik kalir.
+Sistem tepsisi (saatin yanindaki ^) > NeonKeys simgesine sag tik:
+- Kontrol panelini ac
+- OBS adresini kopyala
+- Tus gosterimini duraklat / surdur
+- Kapat
+
+WASD, Q E R F G, Shift Ctrl Alt Space, Z X C V T, 1-5, Tab Esc;
+sol / sag / orta fare tuslari desteklenir. Fare hareketi ve tekerlek
+kaydirma bu surume dahil degildir. Tuş etiketleri varsayilan Valorant
+kontrolleridir. Oyun icindeki atamalarin farkliysa etiketleri duzeltebiliriz.
+
+Arka plan seffaftir. Paneldeki kareli desen sadece onizleme zemini.
+Tek basina NeonKeys.exe yeterlidir; panel ve tasarim EXE icindedir.
+HTML, CS ve PS1 dosyalari yalnizca kaynak kodu degistirmek icindir.
+Windows 10/11 ve .NET Framework 4.x gerekir (genellikle Windows ile gelir).
+Python, OBS eklentisi, internet hesabi veya yonetici izni gerekmez.
+Imzasiz, yerel derlenmis Windows uygulamasidir; Windows uyari gosterebilir.
+
+Tus gecmisi veya metin kaydedilmez; yalnizca o anda basili tuslar okunur.
+Yayinda sifre veya ozel mesaj yazmadan once gostergeni duraklat.
+Valorant/Vanguard ile oyun icinde bu bilgisayarda henuz test edilmedi.
+Oyun acikken tuslar gorunmezse once normal masaustunde test et.
+
+Teknik: .NET Framework / Win32 GetAsyncKeyState, localhost HTTP + SSE.
+Kaynak kod NeonKeys.cs dosyasindadir. Derlemek icin build.ps1 kullan.
+Referanslar:
+https://obsproject.com/kb/browser-source
+https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getasynckeystate
